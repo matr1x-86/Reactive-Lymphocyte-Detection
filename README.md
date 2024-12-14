@@ -12,7 +12,7 @@ If our code is helpful to you, please cite:
 Reactive lymphocytes are an important type of leukocytes, which are morphologically transformed from lymphocytes. The increase in these cells is usually a sign of certain virus infections, so their detec-tion plays an important role in the fight against diseases. Manual detection of reactive lymphocytes is undoubtedly time-consuming and labor-intensive, requiring a high level of professional knowledge. Therefore, it is highly necessary to conduct research into computer-assisted diagnosis. With the devel-opment of deep learning technology in the field of computer vision, more and more models are being applied in the field of medical imaging. We aim to propose an advanced multi-object detection net-work and apply it to practical medical scenarios of reactive lymphocyte detection and other leukocyte detection. First, we introduce a space-to-depth convolution (SPD-Conv), which enhances the model's ability to detect dense small objects. Next, we design a dynamic large kernel attention (DLKA) mecha-nism, enabling the model to better model the context of various cells in clinical scenarios. Lastly, we introduce a brand-new feature fusion network, the asymptotic feature pyramid network (AFPN), which strengthens the model's ability to fuse multi-scale features. Our model ultimately achieves mAP50 of 0.918 for reactive lymphocyte detection and 0.907 for all leukocytes, while also demonstrating good interpretability. In addition, we propose a new peripheral blood cell dataset, providing data support for subsequent related work. In summary, our work takes a significant step forward in the detection of reactive lymphocytes. 
 
 ## Dataset
-We utilized peripheral blood cell images supplied by the Laboratory of Hematology at Zhongnan Hospital of Wuhan University for our dataset. The dataset can be obtained from [here](www.baidu.com).
+We utilized peripheral blood cell images supplied by the Laboratory of Hematology at Zhongnan Hospital of Wuhan University for our dataset. The dataset can be obtained from [here](https://pan.baidu.com/s/19lmYhHZoePHysebnLN2cZw?pwd=pip2).
 ```
 /PBC/
   images/
@@ -73,7 +73,7 @@ python train.py
 ```
 
 ## Evaluating
-Run train.py to start the evaluating process.
+Run val.py to start the evaluating process.
 ```
 python val.py
 ```
